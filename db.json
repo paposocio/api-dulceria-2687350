@@ -1,64 +1,59 @@
 {
-  "user": [
-      {
-          "id": 1,
-          "tipodoc": "Cédula Ciudadanía",
-          "numdoc": "1234567890",
-          "nombre": "Mario Alberto",
-          "apellido": "Yepes Caicedo",
-          "fnacimiento": "1982-06-25",
-          "email": "marioyepes@gmail.com",
-          "password": "qwerty"
-      },
-      {
-          "id": 2,
-          "tipodoc": "Pasaporte",
-          "numdoc": "198765432",
-          "nombre": "Laura María",
-          "apellido": "Esguerra Cortés",
-          "fnacimiento": "1987-03-15",
-          "email": "lauraesguerra@gmail.com",
-          "password": "123456"
-      }
-  ],
-  "habitacion": [
-      {
-          "id": 101,
-          "nombrehab": "Suite Deluxe",
-          "capacidad": 3,
-          "camas": 2,
-          "caracteristicas": "2 camas 1 doble 1 sencilla, baño privado",
-          "valornoche": 125000
-      },
-      {
-          "id": 102,
-          "nombrehab": "Suite Basic",
-          "capacidad": 2,
-          "camas": 1,
-          "caracteristicas": "1 cama doble, baño privado",
-          "valornoche": 100000
-      }
-  ],
-  "reservas": [
-      {
-          "id": 1,
-          "fechareserva": "2022-07-07",
-          "fechaentrada": "2022-08-22",
-          "fechasalida": "2022-08-26",
-          "totalnoches": 5,
-          "valorreserva": 625000,
-          "userId": 1,
-          "habitacionId": 101
-      },
-      {
-          "id": 2,
-          "fechareserva": "2022-04-07",
-          "totalnoches": 2,
-          "fechaentrada": "2022-08-20",
-          "fechasalida": "2022-08-21",
-          "valorreserva": 300000,
-          "userId": 2,
-          "habitacionId": 102
-      }
-  ]
-}
+    "usuarios": [
+      {"id": 1, "nombre": "Juan Pérez", "correo": "juan.perez@example.com"},
+      {"id": 2, "nombre": "Ana Gómez", "correo": "ana.gomez@example.com"},
+      {"id": 3, "nombre": "Carlos Rodríguez", "correo": "carlos.rodriguez@example.com"},
+      {"id": 4, "nombre": "María Martínez", "correo": "maria.martinez@example.com"},
+      {"id": 5, "nombre": "Luis García", "correo": "luis.garcia@example.com"},
+      {"id": 6, "nombre": "Sofía López", "correo": "sofia.lopez@example.com"}
+    ],
+    "productos": [
+      {"id": 1, "nombre": "Caramelo de fresa", "precio": 1.99, "categoria": 1},
+      {"id": 2, "nombre": "Chocolate con almendras", "precio": 2.99, "categoria": 2},
+      {"id": 3, "nombre": "Galletas de vainilla", "precio": 1.49, "categoria": 3},
+      {"id": 4, "nombre": "Pastel de chocolate", "precio": 3.99, "categoria": 4},
+      {"id": 5, "nombre": "Donas glaseadas", "precio": 2.49, "categoria": 5},
+      {"id": 6, "nombre": "Mazapán de cacahuate", "precio": 0.99, "categoria": 6}
+    ],
+    "tiendas": [
+      {"id": 1, "nombre": "Dulcería Central", "ubicacion": "Calle 123"},
+      {"id": 2, "nombre": "La Casa del Dulce", "ubicacion": "Avenida 456"},
+      {"id": 3, "nombre": "El Rincón Dulce", "ubicacion": "Boulevard 789"},
+      {"id": 4, "nombre": "Candy Land", "ubicacion": "Plaza 321"},
+      {"id": 5, "nombre": "Sweet Home", "ubicacion": "Callejón 654"},
+      {"id": 6, "nombre": "Sugar Rush", "ubicacion": "Avenida 987"}
+    ],
+    "pedidos": [
+      {"id": 1, "usuario": 1, "producto": 1, "cantidad": 3, "tienda": 1},
+      {"id": 2, "usuario": 2, "producto": 2, "cantidad": 2, "tienda": 2},
+      {"id": 3, "usuario": 3, "producto": 3, "cantidad": 1, "tienda": 3},
+      {"id": 4, "usuario": 4, "producto": 4, "cantidad": 2, "tienda": 4},
+      {"id": 5, "usuario": 5, "producto": 5, "cantidad": 3, "tienda": 5},
+      {"id": 6, "usuario": 6, "producto": 6, "cantidad": 1, "tienda": 6}
+    ],
+    "categorias": [
+      {"id": 1, "nombre": "Caramelos"},
+      {"id": 2, "nombre": "Chocolates"},
+      {"id": 3, "nombre": "Galletas"},
+      {"id": 4, "nombre": "Pasteles"},
+      {"id": 5, "nombre": "Donas"},
+      {"id": 6, "nombre": "Mazapanes"}
+    ],
+    "inventario": [
+      {"id": 1, "producto": 1, "tienda": 1, "cantidad": 100},
+      {"id": 2, "producto": 2, "tienda": 2, "cantidad": 50},
+      {"id": 3, "producto": 3, "tienda": 3, "cantidad": 75},
+      {"id": 4, "producto": 4, "tienda": 4, "cantidad": 80},
+      {"id": 5, "producto": 5, "tienda": 5, "cantidad": 60},
+      {"id": 6, "producto": 6, "tienda": 6, "cantidad": 90}
+    ],
+    "reseñas": [
+      {"id": 1, "usuario": 1, "producto": 1, "calificacion": 5, "comentario": "¡Me encantan estos caramelos!"},
+      {"id": 2, "usuario": 2, "producto": 2, "calificacion": 4, "comentario": "Buen chocolate, pero un poco caro."},
+      {"id": 3, "usuario": 3, "producto": 3, "calificacion": 4, "comentario": "Las galletas son deliciosas."},
+      {"id": 4, "usuario": 4, "producto": 4, "calificacion": 5, "comentario": "El pastel de chocolate es el mejor que he probado."},
+      {"id": 5, "usuario": 5, "producto": 5, "calificacion": 4, "comentario": "Las donas glaseadas son muy buenas."},
+      {"id": 6, "usuario": 6, "producto": 6, "calificacion": 5, "comentario": "El mazapán de cacahuate es mi favorito."}
+    ]
+  }
+  
